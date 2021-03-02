@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 40px;
+    background: var(--header-bg);
+}
+
+.btn {
+    max-width: 70px;
+    margin-left: 1em;
+}

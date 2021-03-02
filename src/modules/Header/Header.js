@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 import GitAPI from '../../api/GitAPI';
+import s from './Header.module.css';
 
 const Header = (props) => {
     const [text, setText] = useState('');
@@ -17,10 +18,10 @@ const Header = (props) => {
     }
 
     return (
-        <div>
-            <input type='text' value={text} onChange={onTextChange}/>
-            <button onClick={(e) => getUserInfo(text)}>Show</button>
-        </div>
+        <header className={s.container}>
+            <input className={`input`} type='text' value={text} onChange={onTextChange}/>
+            <button className={`btn ${s.btn}`} onClick={(e) => getUserInfo(text)}>Show</button>
+        </header>
     )
 }
 

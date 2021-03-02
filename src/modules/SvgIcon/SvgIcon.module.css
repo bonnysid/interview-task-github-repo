@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7em;
+}
+
+.icon {
+    fill: var(--text);
+    max-width: 30px;
+    width: 100%;
+    max-height: 30px;
+}
+
+.iconText {
+    font-size: 17px;
+    margin-left: 0.5em;
+}

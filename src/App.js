@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
+import nullstyle from './nullstyle.css';
 import './App.css';
 import Header from './modules/Header/Header';
 import UserInfo from "./modules/UserInfo/UserInfo";
@@ -25,11 +25,11 @@ class App extends Component {
         );
 
         return (
-            <>
+            <div className='app-wrapper'>
                 <Header setRepos={this.setRepos} setUserData={this.setUserData}/>
                 <UserInfo user={this.state.userData}/>
                 <RepoList repos={this.state.repos}/>
-            </>
+            </div>
         );
     }
 }

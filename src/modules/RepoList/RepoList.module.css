@@ -1,0 +1,21 @@
+.repoInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    padding: 1em;
+    max-width: 1000px;
+    width: 100%;
+}

@@ -1,28 +1,64 @@
-.App {
-  text-align: center;
+:root {
+  --main-color: rgb(32, 34, 37);
+  --main-color-light: rgb(57, 60, 65);
+  --main-color-extralight: rgb(47, 49, 54);
+  --gray-light: #f7f7f7;
+  --text: rgb(165, 170, 176);
+  --text-light: #f6f6f6;
+  --red: #bf5050;
+  --green: #70b35f;
+  --red-light: #c36e6e;
+  --green-light: #9ac38f;
+
+  --header-bg: var(--main-color-extralight);
+  --header-text: var(--text);
+
+  --app-bg: rgb(54, 57, 63);
+
+  --block-bg: #2f3136;
+
+  --btn-bg: rgb(113, 136, 212);
+  --btn-hover: rgb(102, 122, 191);
+  --btn-text: var(--text-light);
+  --btn-nav-hover: var(--main-color-extralight);
+  --underline: rgb(96, 96, 96);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body {
+  background: var(--app-bg);
+  color: var(--text)
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-title {
-  font-size: 1.5em;
+.input {
+  border-radius: 5px;
+  border: 1px solid var(--underline);
+  padding: 0.7em;
 }
 
-.App-intro {
-  font-size: large;
+.block {
+  background-color: var(--block-bg);
+  border-radius: 5px;
+  padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.btn {
+  padding: .5em 1em;
+  background: var(--btn-bg);
+  transition: .3s;
+  max-width: 300px;
+  border-radius: 5px;
+  width: 100%;
+  color: var(--btn-text);
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: var(--btn-hover);
 }
