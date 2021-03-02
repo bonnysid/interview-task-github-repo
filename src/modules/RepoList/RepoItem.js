@@ -2,7 +2,7 @@ import React from 'react';
 import s from './RepoList.module.css'
 import SvgIcon from "../SvgIcon/SvgIcon";
 
-const RepoItem = ({repo, num}) => {
+const RepoItem = ({repo}) => {
     return (
         <div className={`block ${s.item}`}>
             <h1 className={s.name}>{repo.name}</h1>

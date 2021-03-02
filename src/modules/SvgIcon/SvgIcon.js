@@ -1,14 +1,14 @@
 import React from 'react';
 import s from './SvgIcon.module.css'
-import icons from '../assets/icons.svg';
+import icons from '../../assets/icons.svg';
 
-const SvgIcon = ({id, title, value, color}) => {
+const SvgIcon = ({id, title, value, color, className, ...props}) => {
     return (
         <div className={s.container}>
-            <svg  xlinkTitle={title} className={s.icon} fill={color}>
+            <svg xlinkTitle={title} className={className || s.icon} fill={color} {...props}>
                 <use xlinkHref={`${icons}#${id}`}/>
             </svg>
-            <p className={s.iconText}>{value}</p>
+            {value && <p className={s.iconText}>{value}</p>}
         </div>
     )
 }

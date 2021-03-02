@@ -4,6 +4,7 @@ import './App.css';
 import Header from './modules/Header/Header';
 import UserInfo from "./modules/UserInfo/UserInfo";
 import RepoList from "./modules/RepoList/RepoList";
+import StartPage from "./modules/StartPage/StartPage";
 
 class App extends Component {
 
@@ -20,7 +21,7 @@ class App extends Component {
         if (!this.state.userData) return (
             <>
                 <Header setRepos={this.setRepos} setUserData={this.setUserData}/>
-                <div>Input login of user</div>
+                <StartPage/>
             </>
         );
 
