@@ -1,25 +1,37 @@
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './modules/Header/Header';
+import UserInfo from "./modules/UserInfo/UserInfo";
+import RepoList from "./modules/RepoList/RepoList";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+    state = {
+        userData: null,
+        repos: null
+    }
+
+    setUserData = (userData) => this.setState({userData})
+
+    setRepos = (repos) => this.setState({repos})
+
+    render() {
+        if (!this.state.userData) return (
+            <>
+                <Header setRepos={this.setRepos} setUserData={this.setUserData}/>
+                <div>Input login of user</div>
+            </>
+        );
+
+        return (
+            <>
+                <Header setRepos={this.setRepos} setUserData={this.setUserData}/>
+                <UserInfo user={this.state.userData}/>
+                <RepoList repos={this.state.repos}/>
+            </>
+        );
+    }
 }
 
 export default App;
