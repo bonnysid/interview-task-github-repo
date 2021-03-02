@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/bonnysid/interview-task-github-repo/static/css/main.dae2df23.chunk.css",
+    "main.js": "/bonnysid/interview-task-github-repo/static/js/main.f117e9ee.chunk.js",
+    "main.js.map": "/bonnysid/interview-task-github-repo/static/js/main.f117e9ee.chunk.js.map",
+    "runtime-main.js": "/bonnysid/interview-task-github-repo/static/js/runtime-main.beac74a9.js",
+    "runtime-main.js.map": "/bonnysid/interview-task-github-repo/static/js/runtime-main.beac74a9.js.map",
+    "static/js/2.4bce21f4.chunk.js": "/bonnysid/interview-task-github-repo/static/js/2.4bce21f4.chunk.js",
+    "static/js/2.4bce21f4.chunk.js.map": "/bonnysid/interview-task-github-repo/static/js/2.4bce21f4.chunk.js.map",
+    "index.html": "/bonnysid/interview-task-github-repo/index.html",
+    "static/css/main.dae2df23.chunk.css.map": "/bonnysid/interview-task-github-repo/static/css/main.dae2df23.chunk.css.map",
+    "static/js/2.4bce21f4.chunk.js.LICENSE.txt": "/bonnysid/interview-task-github-repo/static/js/2.4bce21f4.chunk.js.LICENSE.txt",
+    "static/media/icons.89c4b65b.svg": "/bonnysid/interview-task-github-repo/static/media/icons.89c4b65b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.beac74a9.js",
+    "static/js/2.4bce21f4.chunk.js",
+    "static/css/main.dae2df23.chunk.css",
+    "static/js/main.f117e9ee.chunk.js"
+  ]
+}
