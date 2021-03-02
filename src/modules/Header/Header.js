@@ -19,7 +19,7 @@ const Header = (props) => {
 
     return (
         <header className={s.container}>
-            <input className={`input`} type='text' value={text} onChange={onTextChange}/>
+            <input className={`input`} type='text' value={text} onChange={onTextChange} placeholder={'user... example(bonnysid)'}/>
             <button className={`btn ${s.btn}`} onClick={(e) => getUserInfo(text)}>Show</button>
         </header>
     )

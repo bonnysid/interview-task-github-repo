@@ -7,6 +7,7 @@ const RepoList = ({repos}) => {
 
     return (
         <main className={s.container}>
+            <div className={`block ${s.header}`}>Repositories</div>
             {repos.map((repo, i) => <RepoItem key={repo.id} repo={repo} num={i}/>)}
         </main>
     )

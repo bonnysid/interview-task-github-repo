@@ -5,8 +5,14 @@
     justify-content: center;
 }
 
-.avatar {
+.name {
+    margin: 0.5em;
+    font-size: 17px;
+}
 
+.login {
+    font-size: 17px;
+    font-weight: 600;
 }
 
 .repoInfo {
